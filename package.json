@@ -24,8 +24,8 @@
     "webpack-dev-server": "^4.9.0"
   },
   "version": "1.0.0",
-  "description": "My webpack project",
-  "name": "my-webpack-project",
+  "description": "Simple To Do List Application",
+  "name": "To Do List",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",

@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Basics
+# To Do List 
 
-> Learning to work with webpack
+> Simple To Do List App 
 
 
 ## Built With
@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 	Clone this repository
-	git clone https://github.com/MosDevx/Webpack-Basics.git
+	git clone https://github.com/MosDevx/To-Do-List.git
 
 ### Install
 	Open Html file in preferred browser
