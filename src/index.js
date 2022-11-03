@@ -2,7 +2,7 @@ import './style.css';
 
 const todoContainer = document.getElementById('todo-container');
 
-const todoArray = [{ index: 3, isCompleted: false, task: 'Do ABC' }, { index: 1, isCompleted: false, task: 'Do DEF' }, { index: 2, isCompleted: false, task: 'Do GHI' }];
+const todoArray = [{ index: 0, isCompleted: true, task: 'Do ABC' }, { index: 1, isCompleted: false, task: 'Do DEF' }, { index: 2, isCompleted: false, task: 'Do GHI' }];
 
 const todoSorter = (a, b) => (a.index - b.index);
 
@@ -13,7 +13,7 @@ const createTodoItem = ({ index, isCompleted, task }) => {
 
   const completedCheckbox = document.createElement('INPUT');
   completedCheckbox.setAttribute('type', 'checkbox');
-  completedCheckbox.setAttribute('checked', isCompleted);
+  completedCheckbox.checked = isCompleted
   completedCheckbox.classList.add('todo-checkbox');
   parentList.appendChild(completedCheckbox);
 
