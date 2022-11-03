@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@mosdevx](https://github.com/mosdevx)
 - Twitter: [@moseswamae7](https://twitter.com/moseswamae7)
-- LinkedIn: [LinkedIn]3
+- LinkedIn: [LinkedIn](https://linkedin.com/in/moses-wamae-a13a67244)
 
 
 ## 🤝 Contributing
