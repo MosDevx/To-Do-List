@@ -76,12 +76,17 @@ h6 {
   isolation: isolate;
 }
 
-.todo-container {
+.todo-div {
   margin: auto;
   /* background-color: aqua; */
   width: 60%;
   margin-top:200px;
 
+}
+
+.todo-heading{
+  font-size: larger;
+  font-weight: bold;
 }
 
 .todo-item {
@@ -101,4 +106,11 @@ h6 {
 
 .todo-input{
   border:none;
+  font-size: large;
+}
+
+
+.clear-div{
+  text-align: center;
+  background-color: aliceblue;
 }
