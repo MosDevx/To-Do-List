@@ -78,13 +78,13 @@ h6 {
 
 .todo-div {
   margin: auto;
+
   /* background-color: aqua; */
   width: 60%;
-  margin-top:200px;
-
+  margin-top: 200px;
 }
 
-.todo-heading{
+.todo-heading {
   font-size: larger;
   font-weight: bold;
 }
@@ -93,24 +93,24 @@ h6 {
   display: flex;
   justify-content: space-between;
   width: 500px;
+
   /* background-color: yellow; */
-  border-bottom: 1px solid black ;
+  border-bottom: 1px solid black;
   align-items: center;
   margin-bottom: 5px;
 }
 
-.todo-checkbox{
-  width:25px;
-  height:25px;
+.todo-checkbox {
+  width: 25px;
+  height: 25px;
 }
 
-.todo-input{
-  border:none;
+.todo-input {
+  border: none;
   font-size: large;
 }
 
-
-.clear-div{
+.clear-div {
   text-align: center;
   background-color: aliceblue;
 }
