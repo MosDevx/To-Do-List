@@ -13,7 +13,7 @@ const createTodoItem = ({ index, isCompleted, task }) => {
 
   const completedCheckbox = document.createElement('INPUT');
   completedCheckbox.setAttribute('type', 'checkbox');
-  completedCheckbox.checked = isCompleted
+  completedCheckbox.checked = isCompleted;
   completedCheckbox.classList.add('todo-checkbox');
   parentList.appendChild(completedCheckbox);
 
