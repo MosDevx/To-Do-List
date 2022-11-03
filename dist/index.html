@@ -1,3 +1,165 @@
-<!doctype html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]--><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href=""><script src="https://kit.fontawesome.com/dad56601c0.js" crossorigin="anonymous"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head><body><!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-		<![endif]--><div class="todo-div"><ul class id="todo-container"><li class="todo-item"><span class="todo-heading">Today's To Do</span> <i class="fa-solid fa-arrows-rotate"></i></li><li class="todo-item"><input class="todo-input" placeholder="Add to your list..."/></li></ul><div class="clear-div"><span>Clear All Completed</span></div></div><script src="" async defer="defer"></script></body></html>
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/html-webpack-plugin/l  ib/loader.js' in '/home/mdx/Workspace/Microverse/Module2/To-Do-List'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/  html-webpack-plugin/lib/loader.js' in '/home/mdx/Workspace/Microverse/Module2/To-Do-List'
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/Compilation.js:2016:28
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:798:13
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:10:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:270:22
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:9:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:434:22
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:116:11
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:635:23
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/neo-async/async.js:2830:7
+      at done (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/neo-async/async.js:2925:13)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/webpack/lib/NormalModuleFactory.js:1021:23
+      at finishWithoutResolve (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js  :312:11)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:386:15
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:16:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:27:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:15:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:15:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:16:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:27:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:16:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/Resolver.js:435:5
+      at eval (eval at create (/home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/tapable/lib/HookCodeFactory.js:3  3:10), <anonymous>:15:1)
+      at /home/mdx/Workspace/Microverse/Module2/To-Do-List/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+      at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+  
+  - Compilation.js:2016 
+    [To-Do-List]/[webpack]/lib/Compilation.js:2016:28
+  
+  - NormalModuleFactory.js:798 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:798:13
+  
+  
+  - NormalModuleFactory.js:270 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:270:22
+  
+  
+  - NormalModuleFactory.js:434 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:434:22
+  
+  - NormalModuleFactory.js:116 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:116:11
+  
+  - NormalModuleFactory.js:635 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:635:23
+  
+  - async.js:2830 
+    [To-Do-List]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [To-Do-List]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1021 
+    [To-Do-List]/[webpack]/lib/NormalModuleFactory.js:1021:23
+  
+  - Resolver.js:312 finishWithoutResolve
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:312:11
+  
+  - Resolver.js:386 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:386:15
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [To-Do-List]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [To-Do-List]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - Resolver.js:435 
+    [To-Do-List]/[enhanced-resolve]/lib/Resolver.js:435:5
+  
+  
+  - DirectoryExistsPlugin.js:41 
+    [To-Do-List]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:41:15
+  
+  - task_queues:81 process.processTicksAndRejections
+    node:internal/process/task_queues:81:21
+  
+  - child-compiler.js:169 
+    [To-Do-List]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [To-Do-List]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [To-Do-List]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [To-Do-List]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [To-Do-List]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [To-Do-List]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [To-Do-List]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [To-Do-List]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [To-Do-List]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3085 
+    [To-Do-List]/[webpack]/lib/Compilation.js:3085:38
+  
+  
+  - Compilation.js:492 fn
+    [To-Do-List]/[webpack]/lib/Compilation.js:492:9
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [To-Do-List]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3057 cont
+    [To-Do-List]/[webpack]/lib/Compilation.js:3057:34
+  
+  - Compilation.js:3105 
+    [To-Do-List]/[webpack]/lib/Compilation.js:3105:10
+  
+</pre>
