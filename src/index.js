@@ -1,32 +1,41 @@
 import './style.css';
 
-const todoContainer = document.getElementById('todo-container');
+import Todo from './Todo.js';
 
-const todoArray = [{ index: 0, isCompleted: true, task: 'Do ABC' }, { index: 1, isCompleted: false, task: 'Do DEF' }, { index: 2, isCompleted: false, task: 'Do GHI' }];
+const todoContainer = document.getElementById('todo-container');
 
 const todoSorter = (a, b) => (a.index - b.index);
 
-const createTodoItem = ({ index, isCompleted, task }) => {
+const createTodoItem = (todo) => {
   const parentList = document.createElement('li');
   parentList.classList.add('todo-item');
-  parentList.dataset.id = index;
+  parentList.dataset.id = todo.index;
 
   const completedCheckbox = document.createElement('INPUT');
   completedCheckbox.setAttribute('type', 'checkbox');
-  completedCheckbox.checked = isCompleted;
+  completedCheckbox.checked = todo.isCompleted;
   completedCheckbox.classList.add('todo-checkbox');
   parentList.appendChild(completedCheckbox);
 
   const todoInput = document.createElement('INPUT');
   todoInput.setAttribute('type', 'input');
   todoInput.setAttribute('readonly', true);
-  todoInput.setAttribute('value', task);
+  todoInput.setAttribute('value', todo.task);
   todoInput.classList.add('todo-input');
   parentList.appendChild(todoInput);
 
+
+
+  const deleteButton = document.createElement('button')
   const menuIcon = document.createElement('i');
   menuIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
-  parentList.appendChild(menuIcon);
+  deleteButton.appendChild(menuIcon)
+  deleteButton.addEventListener('click', () => {
+    todo.deleteTodo();
+    let mainContainer = parentList.parentNode
+    mainContainer.removeChild(parentList)
+  });
+  parentList.appendChild(deleteButton);
 
   return parentList;
 };
@@ -39,4 +48,8 @@ const populateTodoList = (todoArray, todoContainer) => {
   });
 };
 
-populateTodoList(todoArray, todoContainer);
+const todo1 = new Todo('abc');
+const todo2 = new Todo('def');
+const todo3 = new Todo('ijk');
+
+populateTodoList(Todo.getAllTodos(), todoContainer);
