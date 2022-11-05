@@ -30,7 +30,8 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 	Open Html file in preferred browser
 
-
+### Live Demo
+  View the site [here](https://mosdevx.github.io/To-Do-List/)
 
 ## Authors
 
