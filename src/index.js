@@ -3,7 +3,7 @@ import './style.css';
 import Todo from './Todo.js';
 
 const todoContainer = document.getElementById('todo-container');
-
+const newTodoInput = document.getElementById('new-todo-input')
 const todoSorter = (a, b) => (a.index - b.index);
 
 const createTodoItem = (todo) => {
@@ -23,26 +23,25 @@ const createTodoItem = (todo) => {
   todoInput.setAttribute('value', todo.task);
   todoInput.classList.add('todo-input');
 
-  todoInput.addEventListener('click',()=>{
+  todoInput.addEventListener('click', () => {
     todoInput.removeAttribute('readonly');
-    console.log("input clicked");
+  });
 
-  })
-
-  todoInput.addEventListener("keypress",(e)=>{
-    if(e.key === "Enter"){
-      console.log("Hey")
-      e.preventDefault()
-      let newTask = todoInput.value;
-      todo.updateTodo(newTask)
-      console.log(todoInput.value);
+  todoInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const newTask = todoInput.value;
+      todo.updateTodo(newTask);
       todoInput.setAttribute('readonly', true);
-      todoInput.blur()
-      console.log(Todo.getAllTodos())
+      todoInput.blur();
     }
-  })
+  });
 
-
+  todoInput.addEventListener('blur', () => {
+    const newTask = todoInput.value;
+    todo.updateTodo(newTask);
+    todoInput.setAttribute('readonly', true);
+  });
   parentList.appendChild(todoInput);
 
   const deleteButton = document.createElement('button');
