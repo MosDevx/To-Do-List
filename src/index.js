@@ -24,16 +24,14 @@ const createTodoItem = (todo) => {
   todoInput.classList.add('todo-input');
   parentList.appendChild(todoInput);
 
-
-
-  const deleteButton = document.createElement('button')
+  const deleteButton = document.createElement('button');
   const menuIcon = document.createElement('i');
   menuIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
-  deleteButton.appendChild(menuIcon)
+  deleteButton.appendChild(menuIcon);
   deleteButton.addEventListener('click', () => {
     todo.deleteTodo();
-    let mainContainer = parentList.parentNode
-    mainContainer.removeChild(parentList)
+    const mainContainer = parentList.parentNode;
+    mainContainer.removeChild(parentList);
   });
   parentList.appendChild(deleteButton);
 
