@@ -103,14 +103,15 @@ h6 {
 }
 
 .add-item {
-
   width: 500px;
   list-style: none;
+
   /* background-color: yellow; */
   border-bottom: 1px solid black;
   align-items: center;
   margin-bottom: 5px;
 }
+
 .todo-checkbox {
   width: 25px;
   height: 25px;
@@ -124,16 +125,15 @@ h6 {
 
 .clear-div {
   display: flex;
- 
   background-color: aliceblue;
+
   /* width: 60%; */
   align-self: center;
-
 }
 
-.clear-button{
-  width:300px;
-  padding:10px;
+.clear-button {
+  width: 300px;
+  padding: 10px;
   font-size: large;
 }
 
@@ -151,13 +151,12 @@ h6 {
   color: red;
 }
 
-.add-button{
+.add-button {
   border: none;
   padding: 0;
   background-color: transparent;
-
 }
 
 .add-button:hover {
-  color:green
+  color: green;
 }
