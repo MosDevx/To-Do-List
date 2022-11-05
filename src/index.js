@@ -45,9 +45,16 @@ const createTodoItem = (todo) => {
   parentList.appendChild(todoInput);
 
   const deleteButton = document.createElement('button');
+
   const menuIcon = document.createElement('i');
+  const deleteIcon = document.createElement('i')
+  deleteIcon.classList.add('fa-solid','fa-trash', 'hidden')
   menuIcon.classList.add('fa-solid', 'fa-ellipsis-vertical');
+  
   deleteButton.appendChild(menuIcon);
+  deleteButton.appendChild(deleteIcon);
+  
+
   deleteButton.addEventListener('click', () => {
     todo.deleteTodo();
     const mainContainer = parentList.parentNode;
@@ -79,9 +86,5 @@ newTodoInput.addEventListener('keypress', (e) => {
     newTodoInput.blur();
   }
 });
-
-// const todo1 = new Todo('abc');
-// const todo2 = new Todo('def');
-// const todo3 = new Todo('ijk');
 
 populateTodoList(Todo.getAllTodos(), todoContainer);
