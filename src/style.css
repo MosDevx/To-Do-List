@@ -82,6 +82,8 @@ h6 {
   /* background-color: aqua; */
   width: 60%;
   margin-top: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .todo-heading {
@@ -93,6 +95,16 @@ h6 {
   display: flex;
   justify-content: space-between;
   width: 500px;
+
+  /* background-color: yellow; */
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.add-item {
+  width: 500px;
+  list-style: none;
 
   /* background-color: yellow; */
   border-bottom: 1px solid black;
@@ -112,9 +124,17 @@ h6 {
 }
 
 .clear-div {
-  text-align: center;
+  display: flex;
   background-color: aliceblue;
-  width: 60%;
+
+  /* width: 60%; */
+  align-self: center;
+}
+
+.clear-button {
+  width: 300px;
+  padding: 10px;
+  font-size: large;
 }
 
 .hidden {
@@ -129,4 +149,14 @@ h6 {
 
 .button:hover {
   color: red;
+}
+
+.add-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.add-button:hover {
+  color: green;
 }

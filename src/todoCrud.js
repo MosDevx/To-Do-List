@@ -3,6 +3,7 @@ import Todo from './Todo.js';
 const todoContainer = document.getElementById('todo-container');
 const newTodoInput = document.getElementById('new-todo-input');
 const clearCompletedButton = document.getElementById('clear-completed-button');
+const addButton = document.getElementById('add-button');
 
 const todoSorter = (a, b) => (a.index - b.index);
 
@@ -15,11 +16,11 @@ const createTodoItem = (todo) => {
   completedCheckbox.setAttribute('type', 'checkbox');
   completedCheckbox.checked = todo.isCompleted;
   completedCheckbox.classList.add('todo-checkbox');
+  parentList.appendChild(completedCheckbox);
 
   completedCheckbox.addEventListener('change', (e) => {
     todo.changeStatus(e.target.checked);
   });
-  parentList.appendChild(completedCheckbox);
 
   const todoInput = document.createElement('INPUT');
   todoInput.setAttribute('type', 'input');
@@ -90,8 +91,21 @@ newTodoInput.addEventListener('keypress', (e) => {
   }
 });
 
+addButton.addEventListener('click', (e) => {
+  if (newTodoInput.value !== '') {
+    e.preventDefault();
+    const task = newTodoInput.value;
+    const newTodo = new Todo(task);
+    const newTodoItem = createTodoItem(newTodo);
+    todoContainer.appendChild(newTodoItem);
+    newTodoInput.value = '';
+    newTodoInput.blur();
+  }
+});
+
 clearCompletedButton.addEventListener('click', () => {
   Todo.clearCompleted();
+  todoContainer.innerHTML = '';
   populateTodoList(Todo.getAllTodos(), todoContainer);
 });
 
