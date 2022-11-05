@@ -14,6 +14,10 @@ const createTodoItem = (todo) => {
   completedCheckbox.setAttribute('type', 'checkbox');
   completedCheckbox.checked = todo.isCompleted;
   completedCheckbox.classList.add('todo-checkbox');
+
+  completedCheckbox.addEventListener('change',(e)=>{
+    todo.changeStatus(e.target.checked);
+  })
   parentList.appendChild(completedCheckbox);
 
   const todoInput = document.createElement('INPUT');

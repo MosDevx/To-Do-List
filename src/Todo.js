@@ -7,9 +7,9 @@ class Todo {
     Todo.storageUpdater = value;
   }
 
-  constructor(task) {
+  constructor(task,isCompleted=false) {
     this.task = task;
-    this.isCompleted = false;
+    this.isCompleted = isCompleted
     this.index = null;
 
     Todo.todoArray.push(this);
@@ -19,6 +19,16 @@ class Todo {
       Todo.storageUpdater();
     }
   }
+
+	changeStatus(status){
+		const i = Todo.todoArray.indexOf(this);
+    const todo = Todo.todoArray[i];
+		todo.isCompleted = status
+	
+		if (typeof Todo.storageUpdater === 'function') {
+      Todo.storageUpdater();
+    }
+	}
 
   deleteTodo() {
     const i = Todo.todoArray.indexOf(this);
@@ -48,7 +58,7 @@ class Todo {
   static updateTodosArray(dataSource) {
     if (dataSource?.length) {
       const newArray = dataSource.map((rawTodo) => {
-        const todo = new Todo(rawTodo.task);
+        const todo = new Todo(rawTodo.task, rawTodo.isCompleted);
         return todo;
       });
 
