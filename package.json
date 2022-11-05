@@ -3,6 +3,7 @@
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
     "@webpack-cli/generators": "^2.5.0",
+    "autoprefixer": "^10.4.13",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.1",
@@ -12,7 +13,8 @@
     "hint": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.18",
+    "postcss-loader": "^7.0.1",
     "prettier": "^2.7.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
@@ -24,7 +26,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "version": "1.0.0",
-  "description": "To Do List project",
+  "description": "My webpack project",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
@@ -33,5 +35,5 @@
     "start": "webpack serve --open",
     "serve": "webpack serve"
   },
-  "name": "todo-list-project"
+  "name": "my-webpack-project"
 }
