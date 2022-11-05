@@ -22,6 +22,27 @@ const createTodoItem = (todo) => {
   todoInput.setAttribute('readonly', true);
   todoInput.setAttribute('value', todo.task);
   todoInput.classList.add('todo-input');
+
+  todoInput.addEventListener('click',()=>{
+    todoInput.removeAttribute('readonly');
+    console.log("input clicked");
+
+  })
+
+  todoInput.addEventListener("keypress",(e)=>{
+    if(e.key === "Enter"){
+      console.log("Hey")
+      e.preventDefault()
+      let newTask = todoInput.value;
+      todo.updateTodo(newTask)
+      console.log(todoInput.value);
+      todoInput.setAttribute('readonly', true);
+      todoInput.blur()
+      console.log(Todo.getAllTodos())
+    }
+  })
+
+
   parentList.appendChild(todoInput);
 
   const deleteButton = document.createElement('button');

@@ -11,7 +11,6 @@ class Todo {
   }
 
   deleteTodo() {
-    
     const i = Todo.todoArray.indexOf(this);
     Todo.todoArray.splice(i, 1);
     Todo.recalculateIndex();
