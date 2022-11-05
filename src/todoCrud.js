@@ -2,6 +2,7 @@ import Todo from './Todo.js';
 
 const todoContainer = document.getElementById('todo-container');
 const newTodoInput = document.getElementById('new-todo-input');
+const clearCompletedButton = document.getElementById('clear-completed-button');
 
 const todoSorter = (a, b) => (a.index - b.index);
 
@@ -87,6 +88,11 @@ newTodoInput.addEventListener('keypress', (e) => {
     newTodoInput.value = '';
     newTodoInput.blur();
   }
+});
+
+clearCompletedButton.addEventListener('click', () => {
+  Todo.clearCompleted();
+  populateTodoList(Todo.getAllTodos(), todoContainer);
 });
 
 export default function loadTodos() {

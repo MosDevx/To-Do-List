@@ -69,6 +69,15 @@ class Todo {
       Todo.todoArray.push(...newArray);
     }
   }
+
+  static clearCompleted() {
+    const newArray = Todo.todoArray.filter((todo) => (todo.isCompleted === false));
+    Todo.todoArray = newArray;
+    Todo.recalculateIndex();
+    if (typeof Todo.storageUpdater === 'function') {
+      Todo.storageUpdater();
+    }
+  }
 }
 
 const storeTodosToStorage = () => {
