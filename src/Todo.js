@@ -43,6 +43,9 @@ class Todo {
     const i = Todo.todoArray.indexOf(this);
     const todo = Todo.todoArray[i];
     todo.task = newTask;
+    if (typeof Todo.storageUpdater === 'function') {
+      Todo.storageUpdater();
+    }
   }
 
   static getAllTodos() {
@@ -68,15 +71,6 @@ class Todo {
   }
 }
 
-// const todo1 = new Todo('abc');
-// const todo2 = new Todo('def');
-// const todo3 = new Todo('ijk');
-
-// console.log(Todo.getAllTodos());
-// todo2.deleteTodo()
-// const todo4 = new Todo('lmn');
-// todo4.updateTodo("Just did it")
-// console.log(Todo.getAllTodos());
 
 const storeTodosToStorage = () => {
   const booksString = JSON.stringify(Todo.getAllTodos());
