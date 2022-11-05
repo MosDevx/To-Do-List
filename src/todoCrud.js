@@ -6,6 +6,8 @@ const clearCompletedButton = document.getElementById('clear-completed-button');
 
 const todoSorter = (a, b) => (a.index - b.index);
 
+let markedItems = []
+
 const createTodoItem = (todo) => {
   const parentList = document.createElement('li');
   parentList.classList.add('todo-item');
@@ -15,11 +17,13 @@ const createTodoItem = (todo) => {
   completedCheckbox.setAttribute('type', 'checkbox');
   completedCheckbox.checked = todo.isCompleted;
   completedCheckbox.classList.add('todo-checkbox');
+  parentList.appendChild(completedCheckbox);
 
   completedCheckbox.addEventListener('change', (e) => {
     todo.changeStatus(e.target.checked);
+    markedItems.push(e.target.parentNode)
   });
-  parentList.appendChild(completedCheckbox);
+
 
   const todoInput = document.createElement('INPUT');
   todoInput.setAttribute('type', 'input');
@@ -92,7 +96,10 @@ newTodoInput.addEventListener('keypress', (e) => {
 
 clearCompletedButton.addEventListener('click', () => {
   Todo.clearCompleted();
-  populateTodoList(Todo.getAllTodos(), todoContainer);
+  markedItems.forEach((item)=>{
+    todoContainer.removeChild(item)
+  })
+  markedItems = []
 });
 
 export default function loadTodos() {
