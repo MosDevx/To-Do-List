@@ -1,10 +1,10 @@
 {
   "devDependencies": {
     "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-env": "^7.19.4",
     "@webpack-cli/generators": "^2.5.0",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -21,16 +21,17 @@
     "stylelint-scss": "^3.21.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.11.1"
   },
   "version": "1.0.0",
-  "description": "Simple To Do List Application",
-  "name": "To Do List",
+  "description": "To Do List project",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
+    "start": "webpack serve --open",
     "serve": "webpack serve"
-  }
+  },
+  "name": "todo-list-project"
 }
