@@ -108,9 +108,25 @@ h6 {
 .todo-input {
   border: none;
   font-size: large;
+  width: 50%;
 }
 
 .clear-div {
   text-align: center;
   background-color: aliceblue;
+  width: 60%;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.button:hover {
+  color: red;
 }
