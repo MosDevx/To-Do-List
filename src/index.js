@@ -1,3 +1,4 @@
+import { container } from 'webpack';
 import './style.css';
 
 import Todo from './Todo.js';
@@ -65,6 +66,22 @@ const populateTodoList = (todoArray, todoContainer) => {
     todoContainer.appendChild(todoItem);
   });
 };
+
+
+//add new todo element
+
+newTodoInput.addEventListener('keypress',(e)=>{
+ 
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const task = newTodoInput.value;
+    let newTodo = new Todo(task)
+    let newTodoItem = createTodoItem(newTodo)
+    todoContainer.appendChild(newTodoItem)
+    todoInput.blur();
+  }
+})
+
 
 const todo1 = new Todo('abc');
 const todo2 = new Todo('def');
