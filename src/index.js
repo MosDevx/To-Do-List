@@ -1,10 +1,9 @@
-// import { container } from 'webpack';
 import './style.css';
 
 import Todo from './Todo.js';
 
 const todoContainer = document.getElementById('todo-container');
-const newTodoInput = document.getElementById('new-todo-input')
+const newTodoInput = document.getElementById('new-todo-input');
 const todoSorter = (a, b) => (a.index - b.index);
 
 const createTodoItem = (todo) => {
@@ -67,24 +66,22 @@ const populateTodoList = (todoArray, todoContainer) => {
   });
 };
 
+// add new todo element
 
-//add new todo element
+newTodoInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const task = newTodoInput.value;
+    const newTodo = new Todo(task);
+    const newTodoItem = createTodoItem(newTodo);
+    todoContainer.appendChild(newTodoItem);
+    newTodoInput.value = '';
+    newTodoInput.blur();
+  }
+});
 
-// newTodoInput.addEventListener('keypress',(e)=>{
- 
-//   if (e.key === 'Enter') {
-//     e.preventDefault();
-//     const task = newTodoInput.value;
-//     let newTodo = new Todo(task)
-//     let newTodoItem = createTodoItem(newTodo)
-//     todoContainer.appendChild(newTodoItem)
-//     todoInput.blur();
-//   }
-// })
-
-
-const todo1 = new Todo('abc');
-const todo2 = new Todo('def');
-const todo3 = new Todo('ijk');
+// const todo1 = new Todo('abc');
+// const todo2 = new Todo('def');
+// const todo3 = new Todo('ijk');
 
 populateTodoList(Todo.getAllTodos(), todoContainer);
