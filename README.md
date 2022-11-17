@@ -14,10 +14,8 @@
 
 
 ## Getting Started
-
-
-
 To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
  - Browser
@@ -30,16 +28,22 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 	Open Html file in preferred browser
 
+### Testing
+ To execute tests run ```npm test```
 ### Live Demo
   View the site [here](https://mosdevx.github.io/To-Do-List/)
 
 ## Authors
 
-👤 **Author1**
-
+👤 **Gulalai Ahmadi**
+- GitHub: [@githubhandle](https://github.com/AhmadiGu/)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/gulalai-ahmadi-a7992020a)
+ 
+👤 **Moses Wamae**
 - GitHub: [@mosdevx](https://github.com/mosdevx)
 - Twitter: [@moseswamae7](https://twitter.com/moseswamae7)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/moses-wamae-a13a67244)
+
 
 
 ## 🤝 Contributing

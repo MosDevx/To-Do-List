@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
     "@webpack-cli/generators": "^2.5.0",
     "babel-eslint": "^10.1.0",
@@ -11,6 +12,7 @@
     "eslint-plugin-import": "^2.26.0",
     "hint": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest-environment-jsdom": "^29.3.1",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
@@ -31,7 +33,11 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "test": "jest"
   },
-  "name": "todo-list-project"
+  "name": "todo-list-project",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
 }
