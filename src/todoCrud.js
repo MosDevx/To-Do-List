@@ -1,4 +1,4 @@
-import Todo from './Todo.js';
+import Todo from './TodoClass.js';
 
 const todoContainer = document.getElementById('todo-container');
 const newTodoInput = document.getElementById('new-todo-input');
