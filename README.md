@@ -14,10 +14,10 @@
 
 
 ## Getting Started
-
-
-
 To get a local copy up and running follow these simple example steps.
+
+ ### Testing
+ To execute tests run ```npm test```
 
 ### Prerequisites
  - Browser
