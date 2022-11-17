@@ -35,11 +35,16 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
-
+👤 **Gulalai Ahmadi**
+- GitHub: [@githubhandle](https://github.com/AhmadiGu/)
+- Twitter: [@twitterhandle](https://twitter.com/ Gulalai Ahmadi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Gulalai Ahmadi/)
+ 
+👤 **Moses Wamae**
 - GitHub: [@mosdevx](https://github.com/mosdevx)
 - Twitter: [@moseswamae7](https://twitter.com/moseswamae7)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/moses-wamae-a13a67244)
+
 
 
 ## 🤝 Contributing
