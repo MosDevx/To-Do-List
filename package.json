@@ -33,5 +33,8 @@
     "start": "webpack serve --open",
     "serve": "webpack serve"
   },
-  "name": "todo-list-project"
+  "name": "todo-list-project",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
 }
