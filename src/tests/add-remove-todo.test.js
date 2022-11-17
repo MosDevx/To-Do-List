@@ -8,3 +8,10 @@ describe('Test add functionality', () => {
   });
 });
 
+describe('Test remove functionality', () => {
+  test('Remove selected Item', () => {
+    const todo = new Todo('Make tests for this!');
+    todo.deleteTodo();
+    expect(Todo.getAllTodos().length).toBe(0);
+  });
+});
