@@ -16,8 +16,6 @@
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
- ### Testing
- To execute tests run ```npm test```
 
 ### Prerequisites
  - Browser
@@ -30,6 +28,8 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 	Open Html file in preferred browser
 
+### Testing
+ To execute tests run ```npm test```
 ### Live Demo
   View the site [here](https://mosdevx.github.io/To-Do-List/)
 
