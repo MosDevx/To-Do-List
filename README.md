@@ -37,8 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Gulalai Ahmadi**
 - GitHub: [@githubhandle](https://github.com/AhmadiGu/)
-- Twitter: [@twitterhandle](https://twitter.com/ Gulalai Ahmadi)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Gulalai Ahmadi/)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/gulalai-ahmadi-a7992020a)
  
 👤 **Moses Wamae**
 - GitHub: [@mosdevx](https://github.com/mosdevx)
