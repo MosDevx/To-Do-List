@@ -34,7 +34,7 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "serve": "webpack serve",
-    "test": "jest"
+    "test": "jest --env=jsdom"
   },
   "name": "todo-list-project",
   "dependencies": {
